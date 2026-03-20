@@ -8,6 +8,8 @@
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+  color: #fff;
+  font-size: 16px;
 }
 
 a {
@@ -16,4 +18,81 @@ a {
 
 img {
   max-width: 100%;
+}
+
+.wrapper {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(74, 40, 0, 1) 100%
+  );
+  width: 100%;
+}
+
+.container {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 50px 0;
+}
+
+header .logo {
+  text-transform: uppercase;
+  font-size: 29px;
+  font-weight: 800;
+}
+
+header nav {
+  float: right;
+  width: 50%;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li a {
+  color: #fff;
+  font-size: 14px;
+}
+
+header nav ul li.active::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 5px;
+  background: #dc7000;
+  border-radius: 20px;
+  position: relative;
+  top: 10px;
+  left: -15px;
+}
+
+header nav ul li:not(.active):not(.btn) a:hover {
+  border-bottom: 5px solid #dc7000;
+}
+
+header nav ul li.btn a {
+  background: #fa9021;
+  padding: 9px 17px;
+  border-radius: 6px;
+  transition: 500ms all ease;
+}
+
+header nav ul li.btn a:hover {
+  background: #fa3e21;
+}
+
+.hero--info {
+  margin-top: 100px;
+  max-width: 512px;
+  height: 527px;
 }
