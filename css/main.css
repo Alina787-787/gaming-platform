@@ -32,6 +32,10 @@ img {
 .container {
   width: 1300px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
 }
 
 header {
@@ -93,6 +97,49 @@ header nav ul li.btn a:hover {
 
 .hero--info {
   margin-top: 100px;
-  max-width: 512px;
-  height: 527px;
+  max-width: 527px;
+  height: 512px;
+}
+
+.hero--info h2 {
+  color: #e87d0e;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.hero--info h1 {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.hero--info p {
+  margin: 20px 0;
+  padding-right: 12px;
+}
+
+.hero--info .btn {
+  background: linear-gradient(
+    96deg,
+    rgba(250, 131, 5, 1) 0%,
+    rgba(251, 158, 60, 1) 100%
+  );
+  color: #fff;
+  border-radius: 40px;
+  padding: 14px 30px;
+  border: none;
+  cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.25s ease;
+}
+
+.hero--info .btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero--image {
+  position: absolute;
+  right: -40px;
+  bottom: 0;
 }
