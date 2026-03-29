@@ -51,6 +51,7 @@ header .logo {
 header nav {
   float: right;
   width: 50%;
+  z-index: 2;
 }
 
 header nav ul {
@@ -142,4 +143,94 @@ header nav ul li.btn a:hover {
   position: absolute;
   right: -40px;
   bottom: 0;
+  z-index: 1;
+}
+
+.tranding {
+  padding-top: 80px;
+  margin: 70px;
+}
+
+.elements {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+.tranding h3 {
+  font-weight: 700;
+  font-size: 31px;
+}
+
+.tranding .see-all {
+  border-radius: 10px;
+  background: #25211d;
+  color: #fff;
+  font-size: 20px;
+  padding: 8px 20px;
+  float: right;
+  display: block;
+  transition: all 500ms ease;
+}
+
+.tranding .see-all:hover {
+  transform: scale(1.1);
+}
+
+.tranding .games {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.tranding .games .block {
+  border-radius: 20px;
+}
+
+.tranding .games span {
+  display: block;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.tranding .games span img {
+  position: relative;
+  top: 5px;
+  margin-right: 7px;
+}
+
+.spiderman {
+  padding: 50px 0;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.spiderman h2 {
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  width: 860px;
+  padding-left: 280px;
+  margin-bottom: 80px;
+}
+
+.spiderman h4 {
+  font-size: 26px;
+  font-weight: 600;
+  padding-bottom: 14px;
+}
+
+.spiderman p {
+  width: 545px;
+  line-height: 2;
+}
+
+.banner-element {
+  right: 0;
+  margin-right: 200px;
+  z-index: 1;
+}
+
+.spiderman img {
+  z-index: 2;
 }
