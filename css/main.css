@@ -84,14 +84,16 @@ header nav ul li:not(.active):not(.btn) a:hover {
   border-bottom: 5px solid #dc7000;
 }
 
-header nav ul li.btn a {
+header nav ul li.btn a,
+.email .continue {
   background: #fa9021;
   padding: 9px 17px;
   border-radius: 6px;
   transition: 500ms all ease;
 }
 
-header nav ul li.btn a:hover {
+header nav ul li.btn a:hover,
+.email .continue:hover {
   background: #fa3e21;
 }
 
@@ -315,9 +317,83 @@ header nav ul li.btn a:hover {
 
 .projects .see-all {
   float: none;
-  width: 60px;
+  width: 70px;
   text-align: center;
   margin: 0 auto;
   padding: 8px 20px;
+  margin-top: 40px;
 }
-/* continue */
+
+.subscribe-box {
+  padding: 60px 0;
+  margin: 0 70px;
+  padding-bottom: 120px;
+}
+
+.subscribe-box h3 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.subscribe {
+  background: #1c140f;
+  border-radius: 15px;
+  margin-top: 50px;
+  padding: 40px 3%;
+  width: 94%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.message {
+  width: 636px;
+  padding: 14px;
+}
+
+.message h4 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+
+.message p {
+  font-size: 17px;
+}
+
+.email input {
+  background: #fff;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  width: 385px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  padding: 20px 30px;
+  position: relative;
+  right: -100px;
+  z-index: 1;
+  /* padding-right: 120px; */
+}
+
+.email-input::placeholder {
+  color: #898989;
+}
+
+.continue {
+  background: #dc7000;
+  color: #fff;
+  font-size: 13px;
+  outline: none;
+  box-shadow: none;
+  border-radius: 8px;
+}
+
+.email .continue {
+  cursor: pointer;
+  border: 0;
+  padding: 13px 17px;
+  position: relative;
+  z-index: 2;
+}

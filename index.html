@@ -144,6 +144,41 @@
         </div>
         <a href="" class="see-all">SEE ALL</a>
       </div>
+
+      <div class="subscribe-box">
+        <h3>Lorem Ipsum</h3>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          <br />
+          industry.
+        </p>
+        <div class="subscribe">
+          <div class="message">
+            <h4>Stay in the loop</h4>
+            <p>
+              Subscribe to receive the latest news and updates about TDA. <br />
+              We promise not to spam you!
+            </p>
+          </div>
+          <div class="email">
+            <input
+              type="email"
+              id="emailField"
+              placeholder="Enter email address"
+            />
+            <button class="continue" onclick="checkEmail()">Continue</button>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <script>
+      function checkEmail() {
+        let email = document.querySelector("#emailField").value;
+        if (!email.includes("@")) alert("Немає символу @");
+        else if (!email.includes(".")) alert("Немає символу .");
+        else alert("Все вірно !");
+      }
+    </script>
   </body>
 </html>
