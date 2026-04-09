@@ -30,6 +30,16 @@ img {
   overflow-x: hidden;
 }
 
+.black--wrapper {
+  background: linear-gradient(
+    153deg,
+    rgba(5, 3, 1, 1) 0%,
+    rgba(18, 10, 1, 1) 100%
+  );
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .container {
   width: 1300px;
   margin: 0 auto;
@@ -587,7 +597,247 @@ header nav ul li.btn a:hover,
   opacity: 0.7;
 }
 
-//*ФУТЕР*//
+.statistics-section {
+  padding: 80px 0;
+}
+
+.description {
+  text-align: center;
+}
+
+.description h2 {
+  font-size: 33px;
+  font-weight: 600;
+  padding-bottom: 12px;
+}
+
+.statistics-block {
+  margin: 40px 0;
+  background: #1c140f;
+  width: 1140px;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+  border-radius: 10px;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 20%;
+  margin-left: 30px;
+}
+
+.stat-item:not(:last-child) {
+  border-right: 1px solid #eeeff2;
+  padding-right: 80px;
+  height: 80%;
+}
+
+.stat-item:not(:first-child) {
+  padding-left: 40px;
+}
+
+.services {
+  padding: 90px 0;
+  display: flex;
+}
+
+.list-container {
+  padding-left: 36px;
+  width: 427px;
+}
+
+.list-container h3 {
+  font-size: 30px;
+  font-weight: 700;
+  padding-bottom: 14px;
+}
+
+.list-container p {
+  font-size: 14px;
+}
+
+.list {
+  margin-top: 26px;
+}
+
+.list li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list .list-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.journal {
+  margin: 40px 0;
+  display: flex;
+}
+
+.journal-info {
+  width: 530px;
+  padding-right: 180px;
+}
+
+.journal-info h3 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.journal-info p {
+  font-size: 17px;
+  margin-top: 28px;
+}
+
+.read-more {
+  background: #dc7000;
+  padding: 8px 22px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 38px;
+}
+
+.journal-girl {
+  display: flex;
+  margin: 130px 0;
+}
+
+.image-journal-girl {
+  margin-right: 90px;
+}
+
+.reviews-container {
+  margin: 120px 0;
+  height: 740px;
+  background: #1c140f;
+}
+
+.reviews-info {
+  padding-top: 80px;
+  text-align: center;
+}
+
+.reviews-info h3 {
+  font-size: 35px;
+  font-weight: 500;
+  padding-bottom: 18px;
+}
+
+.reviews-info p {
+  font-size: 14px;
+}
+
+.reviews-blocks {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 70px;
+  margin-right: 20px;
+  margin-top: 60px;
+}
+
+.reviews-block {
+  width: 400px;
+  height: 230px;
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+  padding: 24px 20px;
+  width: 25%;
+}
+
+.reviews-block.active {
+  border: 1px solid #dc7000;
+  background: #0f0901;
+}
+
+.name-user {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.name-user .avatar {
+  padding-right: 12px;
+}
+
+.name-user .about {
+  padding-right: 67px;
+  padding-left: 5px;
+}
+
+.name-user .about h4 {
+  font-size: 17px;
+}
+
+.name-user .about p {
+  color: #4f5665;
+  font-size: 14px;
+}
+
+.name-user .rate {
+  display: flex;
+  padding-right: 1px;
+  padding-top: 7px;
+  padding-left: 20px;
+}
+
+.name-user .rate img {
+  padding-left: 5px;
+  padding-top: 4px;
+}
+
+.opinie p {
+  padding-top: 8px;
+  width: 340px;
+  font-size: 14px;
+}
+
+.black--wrapper .subscribe {
+  background: #1b1b1b;
+}
+
+.contacts {
+  margin: 0 70px;
+}
+
+.hero-contacts {
+  margin: 0 70px;
+  margin-bottom: 30px;
+}
+
+.hero-contacts .navigation {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.hero-contacts h1 {
+  font-size: 33px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.hero-contacts p {
+  text-align: center;
+  padding-top: 13px;
+}
+
+.hero-contacts img {
+  width: 70%;
+  margin: 80px 15%;
+}
+
+.contacts-info {
+  display: flex;
+}
+
 footer {
   background: #070707;
   padding: 40px 0;
