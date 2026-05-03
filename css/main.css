@@ -386,7 +386,6 @@ header nav ul li.btn a:hover,
   position: relative;
   right: -100px;
   z-index: 1;
-  /* padding-right: 120px; */
 }
 
 .email-input::placeholder {
@@ -761,7 +760,6 @@ header nav ul li.btn a:hover,
 
 .name-user {
   display: flex;
-  /* justify-content: space-between; */
 }
 
 .name-user .avatar {
@@ -1039,7 +1037,6 @@ header nav ul li.btn a:hover,
   position: relative;
   right: -100px;
   z-index: 1;
-  /* padding-right: 120px; */
 }
 
 .email-input::placeholder {
@@ -1131,7 +1128,6 @@ header nav ul li.btn a:hover,
   color: #fff;
   padding: 12px 24px;
   transition: all 500ms ease;
-  /* height: 42px; */
   white-space: nowrap;
 }
 
