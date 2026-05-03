@@ -171,5 +171,14 @@
       <hr />
       <p>Copyright ® 2021 Lorem All rights Rcerved</p>
     </footer>
+
+    <script>
+      function checkEmail() {
+        let email = document.querySelector("#emailField").value;
+        if (!email.includes("@")) alert("Немає символу @");
+        else if (!email.includes(".")) alert("Немає символу .");
+        else alert("Все вірно !");
+      }
+    </script>
   </body>
 </html>

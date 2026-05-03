@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Game Website</title>
     <link rel="stylesheet" href="css/main.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
   </head>
 
   <body>
@@ -180,87 +176,78 @@
           </p>
         </div>
 
-        <div class="reviews swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="reviews">
-              <div class="reviews-blocks">
-                <div class="swiper-slide reviews-block">
-                  <div class="name-user">
-                    <div class="avatar">
-                      <img src="/images/Viezh.svg" alt="" />
-                    </div>
-                    <div class="about">
-                      <h4>Viezh Robert</h4>
-                      <p>Warsaw, Poland</p>
-                    </div>
-                    <div class="rate">
-                      <div>
-                        <p>4.5</p>
-                      </div>
-                      <div>
-                        <img src="/images/star.reviews.svg" alt="" />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="opinie">
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s,
-                    </p>
-                  </div>
+        <div class="reviews">
+          <div class="reviews-blocks">
+            <div class="reviews-block">
+              <div class="name-user">
+                <div class="avatar">
+                  <img src="/images/Viezh.svg" alt="" />
                 </div>
-
-                <div class="swiper-slide reviews-block">
-                  <div class="name-user">
-                    <div class="avatar">
-                      <img src="/images/Yessica.svg" alt="" />
-                    </div>
-                    <div class="about">
-                      <h4>Yessica Christy</h4>
-                      <p>Shanxi, China</p>
-                    </div>
-                    <div class="rate">
-                      <div>
-                        <p>4.5</p>
-                      </div>
-                      <div><img src="/images/star.reviews.svg" alt="" /></div>
-                    </div>
-                  </div>
-                  <div class="opinie">
-                    <p>Lorem Ipsum is simply dummy text of the printing and</p>
-                  </div>
+                <div class="about">
+                  <h4>Viezh Robert</h4>
+                  <p>Warsaw, Poland</p>
                 </div>
-
-                <div class="swiper-slide reviews-block">
-                  <div class="name-user">
-                    <div class="avatar">
-                      <img src="/images/Kim.svg" alt="" />
-                    </div>
-                    <div class="about">
-                      <h4>Kim Young Jou</h4>
-                      <p>Seoul, South Korea</p>
-                    </div>
-                    <div class="rate">
-                      <div><p>4.5</p></div>
-                      <div><img src="/images/star.reviews.svg" alt="" /></div>
-                    </div>
+                <div class="rate">
+                  <div>
+                    <p>4.5</p>
                   </div>
-                  <div class="opinie">
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.
-                    </p>
+                  <div>
+                    <img src="/images/star.reviews.svg" alt="" />
                   </div>
                 </div>
               </div>
+              <div class="opinie">
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s,
+                </p>
+              </div>
+            </div>
+
+            <div class="reviews-block">
+              <div class="name-user">
+                <div class="avatar">
+                  <img src="/images/Yessica.svg" alt="" />
+                </div>
+                <div class="about">
+                  <h4>Yessica Christy</h4>
+                  <p>Shanxi, China</p>
+                </div>
+                <div class="rate">
+                  <div>
+                    <p>4.5</p>
+                  </div>
+                  <div><img src="/images/star.reviews.svg" alt="" /></div>
+                </div>
+              </div>
+              <div class="opinie">
+                <p>Lorem Ipsum is simply dummy text of the printing and</p>
+              </div>
+            </div>
+
+            <div class="reviews-block">
+              <div class="name-user">
+                <div class="avatar">
+                  <img src="/images/Kim.svg" alt="" />
+                </div>
+                <div class="about">
+                  <h4>Kim Young Jou</h4>
+                  <p>Seoul, South Korea</p>
+                </div>
+                <div class="rate">
+                  <div><p>4.5</p></div>
+                  <div><img src="/images/star.reviews.svg" alt="" /></div>
+                </div>
+              </div>
+              <div class="opinie">
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+              </div>
             </div>
           </div>
-
-          <div class="swiper-pagination"></div>
-
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
         </div>
       </div>
 
@@ -340,36 +327,13 @@
       <p>Copyright ® 2021 Lorem All rights Rcerved</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
     <script>
-      const swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        loop: true,
-
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-
-        breakpoints: {
-          0: {
-            slidesPerView: 1,
-          },
-          768: {
-            slidesPerView: 2,
-          },
-          1024: {
-            slidesPerView: 3,
-          },
-        },
-      });
+      function checkEmail() {
+        let email = document.querySelector("#emailField").value;
+        if (!email.includes("@")) alert("Немає символу @");
+        else if (!email.includes(".")) alert("Немає символу .");
+        else alert("Все вірно !");
+      }
     </script>
   </body>
 </html>

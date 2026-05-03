@@ -227,7 +227,7 @@ header nav ul li.btn a:hover,
   font-weight: 600;
   text-align: center;
   width: 860px;
-  padding-left: 280px;
+  padding-left: 220px;
   margin-bottom: 80px;
 }
 
@@ -739,7 +739,6 @@ header nav ul li.btn a:hover,
 
 .reviews-blocks {
   display: flex;
-  justify-content: space-between;
   margin-left: 70px;
   margin-right: 20px;
   margin-top: 60px;
@@ -752,6 +751,7 @@ header nav ul li.btn a:hover,
   border: 1px solid #dddddd;
   padding: 24px 20px;
   width: 25%;
+  margin-right: 70px;
 }
 
 .reviews-block.active {
